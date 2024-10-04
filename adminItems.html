@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="adminItems.css">
+</head>
+<body class="container">
+    <div class="row">
+        <!-- sideBar ================================================================================-->
+        <section class="col-1 h-100" id="sidebar">
+            <img class="mosLogo" src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/MoS%20Logo.png?raw=true  " alt="">
+            <ul class="sideBarBtns">
+                <li>
+                    <a href="#">
+                        <img class="oldBtn" src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/Items%20Btn%20selected.png?raw=true" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="adminCustomer.html">
+                        <img class="oldBtn" src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/customerBtnNotselected.png?raw=true" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#order">
+                        <img class="newBtn" src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/Orders%20Btn.png?raw=true " alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#report">
+                        <img class="newBtn" src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/reportsBtn.png?raw=true " alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img class="logoutBtn" src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/Logout%20Btn.png?raw=true" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- middle containt items section========================================================== -->
+        <section class="col-8 items-container">
+            <section class="all-filter-btnSection">
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="all">all</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Burgers">Burgers</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Submarines">Submarines</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Fries">Fries</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Pasta">Pasta</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Chicken">Chicken</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Beverages">Beverages</button>
+            </section>
+            <section class="row searchBarSection"> 
+                <h2 class="selectItemsHeading">Select Items</h2>
+                <input type="text" class="col-3 searchBar d-flex align-items-center" placeholder="Search Item">                                          
+            </section>
+
+            <section class="row itemCards ">
+                <div class="itemsSection d-flex align-items-center justify-content-center position-relative flex-wrap">
+                    <!-- <article class="card card-body col-2 w-25 m-2 position-relative flex-column">
+                        <img src="../assets/images/burger images/1.png" class="cardImages" alt="..."> 
+                        <div>
+                            <h5 class="item-name">Classic Burger (Large)</h5>
+                            <h6>Rs.750</h6>
+                            <h6>15%</h6>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </article> -->
+                    
+       
+                </div>
+            </section> 
+
+            <button class="btn btn-primary addItemsBtn" id="addItemBtn">Add Items</button>
+        </section>
+        
+
+        <!-- expired items showing right side section================================================= -->
+        <div class="col-3 expiredItems">
+            <div class="header">
+                <span>Expired Items</span>
+                <img src="" alt="">
+            </div>
+
+        </div>
+
+
+        <!-- add items form section================================================================= -->
+        <div class="formAddItems">
+            <div class="close-btn">&times;</div>
+            <form>
+                <div class="form-element">
+                    <label >Item Name</label>
+                    <input type="text" id="itemNameField">
+                </div>
+                <div class="form-element">
+                    <label >price</label>
+                    <input type="number" id="priceField">
+                </div>
+                <div class="form-element">
+                    <label >Discount</label>
+                    <input type="number" id="discountField">
+                </div>
+                <div class="form-element">
+                    <label >category</label>
+                    <select id="categoryDropdown">
+                        <option value="Burgers">Burgers</option>
+                        <option value="Submarines">Submarines</option>
+                        <option value="Fries">Fries</option>
+                        <option value="Pasta">Pasta</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Beverages">Beverages</option>
+                    </select> 
+                </div>
+                <div>
+                    <input class="form-element" type="file" accept="image/jpeg, image/png, image/jpg" id="burgerImage">
+                </div>
+                <button class="btn btn-primary addBtn" type="button" onclick="addItem()">Add</button>
+            </form>                
+        </div>
+    
+
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="adminItems.js"></script>
+</body>
+</html>

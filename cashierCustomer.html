@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="cashierCustomer.css">
+</head>
+<body class="container">
+    <div class="row">
+        <!-- sideBar ================================================================================-->
+        <div class="col-1" id="sidebar">
+            <img class="mosLogo" src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/MoS%20Logo.png?raw=true " alt="">
+            <ul class="sideBarBtns">
+                <li>
+                    <a href="cashierCustomer.html">
+                        <img src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/customerBtnSelect.png?raw=true " alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="cashierItems.html">
+                        <img src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/Items%20Btn.png?raw=true " alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img class="logoutBtn" src="  https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/Logout%20Btn.png?raw=true" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Content ================================================================================-->
+            <div class="content col-5">
+                <div class="addCust">
+                    <table class="addCustTable">
+                        <tr>
+                            <td>Customer Name</td>
+                            <td><input type="text" class="input-group-text" id="customerName"></td>
+                        </tr>
+                        <tr>
+                            <td>Customer Phone Number</td>
+                            <td><input type="text" class="input-group-text" id="customerPhoneNum"></td>
+                        </tr>
+                    </table>
+                    <div class="btn btn-primary" onclick="addCustomer()" id="addCustomerBtn">Add Customer</div>
+                    <div class="btn btn-primary" onclick="addNewCustomer()" id="addNewCustomerBtn">Add New Customer</div>
+                </div>                
+            </div>
+            
+            <div class="col-6 content" id="customerDetails">
+                <!-- <table>
+                    <tr>
+                        <td>Customer Name</td>
+                        <td>pasindu</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Phone Number</td>
+                        <td>0781314938</td>
+                    </tr>
+                </table> -->
+            </div>
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="cashierCustomer.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.firstWhiteColor{background: #DFE2E9;}
+.secondRedColor{background: #F97462;}
+.thirdYellowColor{background: #FFDB6D;}
+.fourthBlackColor{background: #070707;}
+
+/* =============================================================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.row{
+    height: 100vh;
+}
+
+/* Sidebar =========================================*/
+
+.mosLogo{
+    width: 100px;
+    padding-top: 3em;
+    margin-left: -0.5em;
+    
+ }
+ .sideBarBtns li{
+     padding-top: 2em;
+     list-style-type: none;
+ }
+ .sideBarBtns li .oldBtn{
+    width: 3.2em;
+    margin-left: -0.9em;
+ }
+ #sidebar{
+     background-color: #f7f7f7;
+     position:fixed;
+ }
+ .sideBarBtns li .logoutBtn{
+     margin-left: -0.5em;
+     margin-top: 7em;
+     width: 2.7em;
+ }
+ .newBtn{
+    width: 2.7em;
+    margin-left: -0.5em;
+ }
+
+
+
+ /* items-container ==========================================================*/
+ .all-filter-btnSection{
+  margin-top: 5em;
+  margin-left: 3.5em;
+ }
+ .filterBtn{
+  color: #F97462;
+  border-color: #F97462;
+  border-radius: 10px; 
+ }
+ .filterBtn:hover{
+  background-color: #FFDB6D;
+  border-color: #F97462;
+  color: #070707;
+ }
+ .searchBarSection{
+  margin-top: -3em;
+  margin-left: -4em;
+ }
+ .searchBar{
+    height: 16%;
+    margin-top: -3.6em;
+    margin-left: 35em;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.933)
+ }
+ .selectItemsHeading{
+    padding-top: 1em;
+    padding-left: 2.8em;
+    margin-top: 2em;
+ }
+.items-container{
+    background-color: #DFE2E9;
+    padding-left: 5.7em;
+    margin-left: 3em;
+    
+}
+.items-container .row{
+  height: 27vh;
+}
+.addItemsBtn{
+  position: fixed;
+  margin-top: 8em;
+  margin-left: 43em;
+  z-index: 999;
+  opacity: 70%;
+  background-color: #F97462;
+  color: #070707;
+  border: none;
+}
+.addItemsBtn:hover{
+  background-color: #FFDB6D;
+  color: #070707;
+}
+.itemCards .card .card-body{
+  display: grid;
+}
+
+/* add item form pop up window======================================================================== */
+
+.formAddItems{
+  position: absolute;
+  position: fixed;
+  background-color: #ffffff;
+  width: 27%;
+  padding: 4em 1em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px 0px #070707;
+  top: 10%;
+  /* top: -150%; */
+  left: 30%;
+  display: none;
+  /* transform: translate(-50%,-50%)scale(1); */
+  transition: top 0ms ease-in-out 200ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 20ms ease-in-out 0ms;
+}
+.formAddItems tr td{
+  padding-bottom: 0.5em;
+}
+.form-element{
+  padding: 0.2em 2.5em;
+}
+.form-element input{
+  display: block;
+}
+.form-element select{
+  display: block;
+}
+.close-btn{
+  background-color: #F97462;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  right: 10px;
+  width:20px;
+  height: 20px;
+  border-radius: 15px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.addBtn{
+  background-color: #F97462;
+  border: none;
+  margin: 2em 3em;
+  padding: 0.5em 5em;
+}
+.addBtn:hover{
+  background-color: #FFDB6D;
+  color: #070707;
+}
+
+
+/* Expired Items============================================================== */
+.expiredItems{
+    position:fixed;
+    background-color: #f7f7f7;
+    margin-left: 58em;
+    height: 100vh;
+ }
+
+ .expiredItems .header span{
+    padding-top: 1em;
+    padding-left: 1.5em;
+    font-size: 2rem;
+ }
+ .expiredItems .header{
+    padding-top: 7.5em;
+ }

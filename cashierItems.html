@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="cashierItems.css">
+</head>
+<body class="container">
+    <div class="row">
+        <!-- sideBar ================================================================================-->
+        <section class="col-1" id="sidebar">
+            <img class="mosLogo" src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/MoS%20Logo.png?raw=true " alt="">
+            <ul class="sideBarBtns">
+                <li>
+                    <a href="cashierCustomer.html">
+                        <img src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/customerBtnNotselected.png?raw=true " alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/Items%20Btn%20selected.png?raw=true " alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img class="logoutBtn" src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/Logout%20Btn.png?raw=true" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- items ================================================================================-->
+        <section class="col-8 items">
+            <section class="row" >
+                <div id="maiItemBtnsWhite">
+                    <ul class="position-absolute">
+                        <li>
+                            <a href=""><img class="hotBtn" src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/white/Hot%20Btn.png?raw=true " alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/white/Burgers%20Btn.png?raw=true " alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/white/Submarin%20Btn.png?raw=true " alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/white/Fries%20Btn.png?raw=true" alt=""></a>
+                        </li>
+                            <a href=""><img src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/white/Pasta%20Btn.png?raw=true " alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/white/Chicken%20Btn.png?raw=true " alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/white/Beverages%20Btn.png?raw=true" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="maiItemBtnsYellow">
+                    <ul>
+                        <li>
+                            <a href=""><img class="hotBtn" src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/yellow/Hot%20Btn.png?raw=true " alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/yellow/Burgers%20Btn.png?raw=true " alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/yellow/Submarin%20Btn.png?raw=true " alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/yellow/Fries%20Btn.png?raw=true" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/yellow/Pasta%20Btn.png?raw=true" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/yellow/Chicken%20Btn.png?raw=true" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/yellow/Beverages%20Btn.png?raw=true " alt=""></a>
+                        </li>
+                    </ul>
+                </div>              
+            </section>
+
+
+            <section class="row" id="searchBar"> 
+                <h2 class="col-5 ">Select Items</h2>
+                <input type="text" class="col-3 searchBar d-flex align-items-center" placeholder="Search Item">                                          
+            </section>
+
+
+            <section class="row" id="itemsList">
+                
+            </section>
+        </section>
+
+        <!-- cart ================================================================================-->
+        <div class="col-3 cart">
+            <div class="header">
+                <span>Cart</span>
+                <img src=" https://github.com/VageeshaDeSilva/MOS-burgers-WebApp/blob/main/assets/images/icons8-cart-64.png?raw=true" alt="">
+            </div>
+
+        </div>
+    </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="cashierItems.js"></script>
+</body>
+</html>
